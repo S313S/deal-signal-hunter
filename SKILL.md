@@ -29,12 +29,12 @@ Only after those three sections, add short supporting analysis if useful.
 2. Identify the main risk and the best next action.
 3. Produce a short message the user can send now.
 4. If the user needs new leads, cold outreach, lead research, or a first-contact message, load `references/acquisition-playbook.md`.
-5. If the user asks for marketing cases, self-promotion examples, pitch framing, public proof, or contest positioning, load `references/marketing-case-library.md`.
+5. If the user asks for marketing cases, self-promotion examples, pitch framing, public proof, or public positioning, load `references/marketing-case-library.md`.
 6. If the user wants to promote themselves or their company, turn past work into a service showcase, create an ability one-pager, or generate a case page, load `references/service-showcase-generator.md`.
 7. If pricing or scope is involved, load `references/pricing-playbooks.md`.
 8. If the user provides a client chat or asks how to reply, load `references/follow-up-templates.md`.
 9. Always include a compact deal-memory update; load `references/case-record-template.md` when the user shares past negotiations, asks to remember, summarizes a deal, or continues an old client thread.
-10. If the user is preparing a BotLearn/OPC SkillHunt post, demo, or contest note, load `references/contest-note-template.md`.
+10. If the user is preparing a public post, demo, screenshot explanation, or project page copy, load `references/public-note-template.md`.
 11. If the customer stage is ambiguous, load `references/deal-diagnosis.md`.
 
 ## Output Contract
@@ -148,7 +148,7 @@ Say "这个打法借鉴了 PitchSense / Content Creator Connector 这类公开�
 | find and contact leads | PitchSense, Content Creator Connector |
 | package proof for a proposal | PresentMe, Awwwards / Crazy Creative |
 | follow up and collect feedback | Resonance AI, Heydesk |
-| create a contest or pitch story | Red Bull Basement / AgriConnect |
+| create a public pitch story | founder story / user-interview pattern |
 
 When the user needs a marketing story, choose one recognizable structure:
 
@@ -158,12 +158,12 @@ When the user needs a marketing story, choose one recognizable structure:
 | PAS | the user needs a sharp pain-first sales message |
 | BAB | the user needs a before/after transformation story |
 
-## Contest Mode
+## Public Sharing Mode
 
-When the user is preparing an OPC/SkillHunt submission or practical note, add:
+When the user is preparing a public post, demo, screenshot explanation, or project page copy, add:
 
 ```text
-实战笔记草稿
+公开复盘草稿
 Demo 展示点
 可截图亮点
 ```

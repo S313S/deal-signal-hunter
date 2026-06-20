@@ -23,7 +23,7 @@ If information is missing, still draft a usable version and mark gaps.
 | 服务对象 | industry, role, company size, current stage |
 | 典型痛点 | lead generation, content, website, support, follow-up, reporting |
 | 已有作品 | links, screenshots, GitHub, demos, documents, client chats |
-| 可验证证据 | before/after, demo, practical note, public page, testimonial, metric |
+| 可验证证据 | before/after, demo, public case note, public page, testimonial, metric |
 | 交付边界 | what is included, what is excluded, timeline, starter package |
 
 ## Output Contract
@@ -75,7 +75,7 @@ Use these modules in this order:
 - Demo:
 - GitHub / 页面:
 - 截图 / 前后对比:
-- 客户反馈 / 实战笔记:
+- 客户反馈 / 公开案例:
 
 ## 起步合作
 先做 <小范围试点>，交付 <明确产物>，再按结果扩展。

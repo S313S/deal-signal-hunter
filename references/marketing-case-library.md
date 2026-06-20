@@ -1,6 +1,6 @@
 # Marketing Case Library
 
-Use this reference when the user asks whether there are real marketing examples, wants stronger self-promotion proof, needs contest positioning, or wants to turn market cases into a practical sales workflow.
+Use this reference when the user asks whether there are real marketing examples, wants stronger self-promotion proof, needs public positioning, or wants to turn market cases into a practical sales workflow.
 
 ## How To Use These Cases
 
@@ -24,7 +24,7 @@ Do not say the user built, won, invested in, partnered with, or operated these p
 | 售后/FAQ/客户支持拖垮一个人 | Heydesk | combine knowledge base, AI answer, ticket routing, and human handoff |
 | 提案、PPT、案例页来不及做 | PresentMe | turn raw documents, reports, repos, and past delivery notes into branded presentations |
 | 自己的作品集不像可成交资产 | Awwwards / Crazy Creative | make the portfolio itself the proof, not just a container of old work |
-| 比赛/路演需要故事线 | Red Bull Basement / AgriConnect | founder story, user interviews, one-page business plan, live pitch |
+| 公开介绍需要故事线 | founder story / user-interview pattern | real problem, real user signal, one-page service story, live demo |
 
 ## Recognizable Marketing Frameworks
 
@@ -34,7 +34,7 @@ Use a named framework when the user needs a public-facing marketing asset. Keep 
 |---|---|---|
 | AIDA | Attention, Interest, Desire, Action | Skill page, GitHub README, landing page, public post |
 | PAS | Problem, Agitate, Solve | cold outreach, pain-first sales copy, follow-up |
-| BAB | Before, After, Bridge | case page, before/after story, practical note |
+| BAB | Before, After, Bridge | case page, before/after story, public case note |
 
 ### AIDA Template
 
@@ -160,7 +160,7 @@ Public pattern: personal portfolio as an award-worthy marketing asset.
 
 Best use in this skill:
 
-- Treat the user's own website, portfolio, or BotLearn Skill page as a conversion surface.
+- Treat the user's own website, portfolio, or project page as a conversion surface.
 - Make proof visible in the first screen: who it helps, what outcome it creates, and what evidence supports it.
 - Use for brand website, design, interaction, and creative service positioning.
 
@@ -170,20 +170,20 @@ Sendable framing:
 Awwwards 这类案例的重点是：作品集本身就是营销资产。你的 Skill 页面也应该让人一眼看到对象、痛点、产出和可验证证据。
 ```
 
-### Red Bull Basement / AgriConnect
+### Founder Story / User-Interview Pattern
 
-Public pattern: founder story, real user interviews, AI-assisted business plan, and live pitch.
+Public pattern: explain a real problem, show real user signals, present one small working demo, and make the next step easy to understand.
 
 Best use in this skill:
 
-- Build a contest story from real problem, real user, simple demo, and future growth path.
+- Build a public story from real problem, real user signal, simple demo, and future growth path.
 - Avoid presenting the skill as a prompt collection; present it as a sales operating system for one-person companies.
-- Use customer conversations and practical notes as proof.
+- Use customer conversations and public case notes as proof.
 
 Sendable framing:
 
 ```text
-比赛叙事可以借鉴 Red Bull Basement 的结构：真实问题、真实用户、一个能演示的解决方案、以及可扩展的商业路径。你的故事核心不是“我做了一个 Skill”，而是“一人公司怎样更稳定地获客和谈单”。
+公开介绍可以采用这个结构：真实问题、真实用户信号、一个能演示的解决方案、以及可扩展的服务路径。你的故事核心不是“我做了一个 Skill”，而是“一人公司怎样更稳定地获客和谈单”。
 ```
 
 ## Output Rule

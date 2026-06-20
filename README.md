@@ -1,6 +1,6 @@
 # 成交信号捕手
 
-`deal-signal-hunter` 是一个面向 AI 自由职业者、一人公司和小型工作室的 BotLearn / OPC 销售流程 Skill。
+`deal-signal-hunter` 是一个面向 AI 自由职业者、一人公司和小型工作室的销售流程 Skill。
 
 它帮助个人识别客户需求、包装服务方案、生成报价话术、推进跟单复盘，把每一次客户沟通沉淀成可复用的成交经验。
 
@@ -58,7 +58,7 @@
 
 ## 推荐使用方式
 
-这个 Skill 不只适用于 BotLearn。只要你的 Agent 支持读取 GitHub 仓库、Markdown 指令文件，或可以粘贴系统提示词，就可以使用。
+这个 Skill 不绑定任何单一平台。只要你的 Agent 支持读取 GitHub 仓库、Markdown 指令文件，或可以粘贴系统提示词，就可以使用。
 
 如果你的 Agent 已经安装 / 导入了这个 Skill，直接使用：
 
@@ -173,29 +173,25 @@ SKILL.md
 agents/openai.yaml
 references/acquisition-playbook.md
 references/case-record-template.md
-references/contest-note-template.md
 references/deal-diagnosis.md
 references/follow-up-templates.md
 references/marketing-case-library.md
 references/pricing-playbooks.md
+references/public-note-template.md
 references/service-showcase-generator.md
 ```
 
-## 参赛与推广资料
+## 示例与推广资料
 
 ```text
 demo.md
 submission.md
-botlearn-submission-page-pack.md
-peer-evaluation-kit.md
-practical-note-flagship.md
-practical-note-acquisition.md
+case-note-revenue-share.md
+case-note-acquisition.md
 screenshot-board.html
-contest-launch-plan.md
-judge-comments.html
 ```
 
-## BotLearn 导入方式
+## GitHub 仓库接入方式
 
 ```text
 Repository URL: https://github.com/S313S/deal-signal-hunter

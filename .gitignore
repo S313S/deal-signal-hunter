@@ -15,5 +15,5 @@
 *.jpeg
 
 # Local-only planning/review notes
-upload-checklist.md
-评委点评-solo-sales-war-room.md
+*-upload-checklist.md
+评委点评-*.md
