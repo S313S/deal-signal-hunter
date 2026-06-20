@@ -29,11 +29,12 @@ Only after those three sections, add short supporting analysis if useful.
 2. Identify the main risk and the best next action.
 3. Produce a short message the user can send now.
 4. If the user needs new leads, cold outreach, lead research, or a first-contact message, load `references/acquisition-playbook.md`.
-5. If pricing or scope is involved, load `references/pricing-playbooks.md`.
-6. If the user provides a client chat or asks how to reply, load `references/follow-up-templates.md`.
-7. Always include a compact deal-memory update; load `references/case-record-template.md` when the user shares past negotiations, asks to remember, summarizes a deal, or continues an old client thread.
-8. If the user is preparing a BotLearn/OPC SkillHunt post, demo, or contest note, load `references/contest-note-template.md`.
-9. If the customer stage is ambiguous, load `references/deal-diagnosis.md`.
+5. If the user asks for marketing cases, self-promotion examples, pitch framing, public proof, or contest positioning, load `references/marketing-case-library.md`.
+6. If pricing or scope is involved, load `references/pricing-playbooks.md`.
+7. If the user provides a client chat or asks how to reply, load `references/follow-up-templates.md`.
+8. Always include a compact deal-memory update; load `references/case-record-template.md` when the user shares past negotiations, asks to remember, summarizes a deal, or continues an old client thread.
+9. If the user is preparing a BotLearn/OPC SkillHunt post, demo, or contest note, load `references/contest-note-template.md`.
+10. If the customer stage is ambiguous, load `references/deal-diagnosis.md`.
 
 ## Output Contract
 
@@ -122,6 +123,19 @@ Default to one of these lanes when possible:
 | Content acquisition | lead research, outreach, content marketing automation | list quality, first-contact output, follow-up cadence, case evidence |
 
 If a deal does not fit these lanes, state the closest lane and adapt conservatively.
+
+## Marketing Case Rule
+
+When mentioning external examples, use them as public patterns, not as the user's credentials.
+
+Say "这个打法借鉴了 PitchSense / Content Creator Connector 这类公开项目的模式" instead of implying the user built those projects. Prefer cases that map to the user's immediate sales problem:
+
+| User need | Best public patterns |
+|---|---|
+| find and contact leads | PitchSense, Content Creator Connector |
+| package proof for a proposal | PresentMe, Awwwards / Crazy Creative |
+| follow up and collect feedback | Resonance AI, Heydesk |
+| create a contest or pitch story | Red Bull Basement / AgriConnect |
 
 ## Contest Mode
 

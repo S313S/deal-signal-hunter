@@ -10,6 +10,7 @@ It turns lead information and client chats into:
 - sendable client replies
 - deal records
 - reusable sales experience
+- public marketing case patterns that can be adapted without claiming false credentials
 
 ## Best For
 
@@ -110,6 +111,7 @@ references/case-record-template.md
 references/contest-note-template.md
 references/deal-diagnosis.md
 references/follow-up-templates.md
+references/marketing-case-library.md
 references/pricing-playbooks.md
 ```
 
