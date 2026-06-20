@@ -1,0 +1,19 @@
+.DS_Store
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+
+# Local editor and OS files
+.idea/
+.vscode/
+
+# Keep generated screenshots local unless explicitly added later.
+*.png
+*.jpg
+*.jpeg
+
+# Local-only planning/review notes
+upload-checklist.md
+评委点评-solo-sales-war-room.md

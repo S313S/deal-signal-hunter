@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一人公司售前作战室 - 提交截图板</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #5d6773;
+      --line: #d9dee5;
+      --paper: #f7f3ec;
+      --panel: #fffdf8;
+      --green: #0f766e;
+      --blue: #265a8f;
+      --red: #b42318;
+      --gold: #a16207;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .badge {
+      border: 1px solid var(--ink);
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      min-height: 950px;
+      box-shadow: 0 1px 0 rgba(23, 32, 42, 0.08);
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 25px;
+      letter-spacing: 0;
+    }
+
+    .case-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 16px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      display: inline-block;
+    }
+
+    .dot.blue {
+      background: var(--blue);
+    }
+
+    .input {
+      background: #f2f5f7;
+      border-left: 5px solid var(--blue);
+      border-radius: 6px;
+      padding: 13px 14px;
+      margin-bottom: 16px;
+      color: #28313b;
+      font-size: 15px;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      margin-top: 14px;
+    }
+
+    .section:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    h3 {
+      margin: 0 0 9px;
+      font-size: 18px;
+      letter-spacing: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h3::before {
+      content: "";
+      width: 4px;
+      height: 18px;
+      border-radius: 2px;
+      background: var(--green);
+      display: inline-block;
+    }
+
+    .blue-title::before {
+      background: var(--blue);
+    }
+
+    p {
+      margin: 0 0 10px;
+      font-size: 15.5px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 5px 0;
+      font-size: 15.5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      margin-top: 6px;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 8px 9px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #eef2f6;
+      font-weight: 800;
+    }
+
+    .message {
+      background: #f9fafb;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 12px 13px;
+      font-size: 15px;
+    }
+
+    .message p:last-child {
+      margin-bottom: 0;
+    }
+
+    .memory {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mini {
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .mini strong {
+      color: var(--gold);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .tagline {
+      margin-top: 18px;
+      padding: 12px 14px;
+      background: #17202a;
+      color: #fff;
+      border-radius: 7px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .warning {
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    @media (max-width: 980px) {
+      .page {
+        padding: 18px;
+      }
+
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .panel {
+        min-height: auto;
+      }
+
+      .memory {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <h1>一人公司售前作战室</h1>
+        <p class="subtitle">把潜在客户线索和客户聊天记录，转成破冰话术、跟进节奏、报价边界和可复用经验。</p>
+      </div>
+      <div class="badge">OPC SkillHunt Demo Board</div>
+    </header>
+
+    <section class="grid" aria-label="Demo screenshots">
+      <article class="panel">
+        <h2>Demo 1：客户提出“后续分成”</h2>
+        <p class="case-label"><span class="dot"></span>报价边界 + 跟进话术 + 经验沉淀</p>
+
+        <div class="input">
+          <strong>输入：</strong>客户希望当前费用优化，并提出“后面如果网页产生营业额，你可以占一定百分比”。我已经完成品牌视觉、AI 氛围图、页面结构、文案和前端预览，但还没有正式结算。
+        </div>
+
+        <div class="section">
+          <h3>结论</h3>
+          <p>这不是直接拒绝信号，而是客户想降低前期现金支出，用未来不确定收益替代当前已经发生的建设成本。</p>
+          <p><strong>可以谈长期合作，但不要让分成替代当前基础建设费。</strong></p>
+        </div>
+
+        <div class="section">
+          <h3>下一步动作</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>层级</th>
+                <th>处理方式</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>当前阶段</td>
+                <td>基础建设费先结算，覆盖已完成的品牌、视觉、页面和上线准备。</td>
+              </tr>
+              <tr>
+                <td>后续合作</td>
+                <td>网站上线、有可核算订单后，再谈分成、维护或增长合作。</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="warning">让步只能发生在价格和范围之间，不能换成无限后续责任。</p>
+        </div>
+
+        <div class="section">
+          <h3>可直接发送的话术</h3>
+          <div class="message">
+            <p>分成这个方向我觉得后面可以聊，也感谢你们是往长期合作考虑。</p>
+            <p>不过我建议不要用后续营业额分成来替代当前网站的基础建设费用。因为现在还没有正式上线，也还没有稳定营业额，前期这部分主要是已经发生的品牌页面、视觉素材、文案结构、前端搭建和上线准备成本。</p>
+            <p>比较稳的方式是：当前阶段先按基础建设费结算；后续如果正式上线并产生可核算订单，我们再单独谈分成比例、统计口径、结算周期，以及我具体负责哪些增长动作。</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>成交台账 + 可复用经验</h3>
+          <div class="memory">
+            <div class="mini">
+              <strong>成交台账记录</strong>
+              客户认可长期合作，但当前现金付款优先级不足，倾向用未来收益降低前期固定支出。
+            </div>
+            <div class="mini">
+              <strong>可复用经验</strong>
+              分成可以作为后续增长合作，但不能替代当前基础建设费。
+            </div>
+          </div>
+        </div>
+
+        <div class="tagline">截图亮点：不是只写回复，而是把一次谈判变成可复用的销售判断。</div>
+      </article>
+
+      <article class="panel">
+        <h2>Demo 2：小型品牌获客破冰</h2>
+        <p class="case-label"><span class="dot blue"></span>目标画像 + 首封话术 + 三步跟进</p>
+
+        <div class="input">
+          <strong>输入：</strong>潜在客户是小型品牌方，有官网和社媒内容，但展示、复用和跟进链路弱。我不想一上来就说“我能帮你做 AI”，想找到客户更容易理解的切入点。
+        </div>
+
+        <div class="section">
+          <h3 class="blue-title">目标客户画像</h3>
+          <p>有活动、产品或内容素材，但官网/社媒没有形成稳定展示和客户跟进流程的小型品牌。</p>
+        </div>
+
+        <div class="section">
+          <h3 class="blue-title">最值得切入的痛点</h3>
+          <ul>
+            <li>不是“多做内容”，而是把展示、咨询和后续跟进做成稳定流程。</li>
+            <li>AI 不作为卖点本身，而作为降低内容复用和售前整理成本的手段。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3 class="blue-title">首封破冰话术</h3>
+          <div class="message">
+            <p>你好，我看了你们最近的官网和内容，感觉你们现在最值得优化的不是单纯多发内容，而是把品牌展示、客户咨询和后续跟进做成更稳定的转化流程。</p>
+            <p>我这边做的是 AI 工作流和一人公司售前自动化，可以先基于你们公开信息做一个很小的示例：比如一页品牌展示/跟进流程建议。</p>
+            <p>如果你愿意，我可以先发你一页简版，不占用太多时间。</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="blue-title">三步跟进节奏</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>触达</th>
+                <th>时间</th>
+                <th>目标</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Day 0</td>
+                <td>用具体观察打开对话，不推销工具。</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Day 2-3</td>
+                <td>补一个类似案例或一页流程建议。</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Day 6-7</td>
+                <td>清爽收口，询问是否暂停或约时间。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section">
+          <h3 class="blue-title">可复用获客经验</h3>
+          <div class="memory">
+            <div class="mini">
+              <strong>有效破冰点</strong>
+              指出展示、跟进、内容复用的具体断点。
+            </div>
+            <div class="mini">
+              <strong>无效说法</strong>
+              直接说“我能帮你做 AI 自动化”。
+            </div>
+          </div>
+        </div>
+
+        <div class="tagline">截图亮点：覆盖获客前端，不只是客户来了之后再谈成交。</div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

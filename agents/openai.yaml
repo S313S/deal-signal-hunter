@@ -1,0 +1,7 @@
+interface:
+  display_name: "一人公司售前作战室"
+  short_description: "从获客到跟进，生成话术、报价边界和经验台账"
+  default_prompt: "Use $solo-sales-war-room to turn my client chat into a concise sales action sheet and reusable deal memory."
+
+policy:
+  allow_implicit_invocation: true
