@@ -26,6 +26,52 @@ Do not say the user built, won, invested in, partnered with, or operated these p
 | 自己的作品集不像可成交资产 | Awwwards / Crazy Creative | make the portfolio itself the proof, not just a container of old work |
 | 比赛/路演需要故事线 | Red Bull Basement / AgriConnect | founder story, user interviews, one-page business plan, live pitch |
 
+## Recognizable Marketing Frameworks
+
+Use a named framework when the user needs a public-facing marketing asset. Keep the framework visible so the output does not feel like generic analysis.
+
+| Framework | Structure | Best for |
+|---|---|---|
+| AIDA | Attention, Interest, Desire, Action | Skill page, GitHub README, landing page, public post |
+| PAS | Problem, Agitate, Solve | cold outreach, pain-first sales copy, follow-up |
+| BAB | Before, After, Bridge | case page, before/after story, practical note |
+
+### AIDA Template
+
+```text
+Attention: <一句话点出客户正在面对的高频痛点>
+Interest: <说明为什么旧做法低效，为什么现在值得解决>
+Desire: <展示服务结果、案例模式或可验证证据>
+Action: <给出一个低摩擦下一步>
+```
+
+### PAS Template
+
+```text
+Problem: <客户现在卡住的具体流程>
+Agitate: <这个问题继续存在会造成什么损耗>
+Solve: <用一个小交付物解决最关键断点>
+```
+
+### BAB Template
+
+```text
+Before: <改造前的混乱状态>
+After: <改造后的可见结果>
+Bridge: <中间用什么服务、流程或 Skill 完成转变>
+```
+
+## Before/After Story Bank
+
+Use these short stories as structure, not as invented proof. Replace placeholders with the user's real material.
+
+| Scenario | Before | After | Bridge |
+|---|---|---|---|
+| 获客外联 | 不知道找谁，也不知道第一句话怎么开口 | 有目标客户画像、线索评分和三步触达节奏 | PitchSense + Content Creator Connector pattern |
+| 服务展示 | 作品散在聊天、文件夹和代码仓库里，客户看不懂价值 | 有一页服务说明、匿名案例页和可发布简介 | PresentMe + Awwwards pattern |
+| 会后跟单 | 每次会后靠记忆追问，异议和预算信号丢失 | 有结构化回访问题、成交台账和下次触发条件 | Resonance AI pattern |
+| 客服支持 | 重复问题占用大量时间，人工回复口径不一致 | 有知识库、FAQ、工单路由和人工接管边界 | Heydesk pattern |
+
 ## Case Notes
 
 ### PitchSense
@@ -146,8 +192,10 @@ When adding a case, keep it practical:
 
 ```text
 可借鉴案例：<案例名>
+可识别框架：<AIDA/PAS/BAB>
 借鉴点：<一句话>
 改成你的场景：<一句话>
+前后对比：<Before -> After>
 今天能做的动作：<一条可执行动作>
 可直接发送的话术：<短消息>
 ```

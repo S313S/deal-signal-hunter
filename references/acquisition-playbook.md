@@ -89,7 +89,7 @@ Example:
 
 ## Case Patterns To Mention
 
-Use these as abstract patterns, not fake credentials:
+Use these as public patterns, not fake credentials. For named frameworks and before/after stories, also load `marketing-case-library.md`.
 
 | Pattern | How to apply |
 |---|---|

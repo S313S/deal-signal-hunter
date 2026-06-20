@@ -1,6 +1,6 @@
 ---
 name: solo-sales-war-room
-description: Use when AI freelancers, one-person companies, or small studios need help with client acquisition, lead research, outreach messages, sales conversations, pricing, proposals, follow-up messages, deal tracking, avoiding free-demo scope creep, or converting past client chats into reusable negotiation experience.
+description: Use when AI freelancers, one-person companies, or small studios need help with client acquisition, lead research, outreach messages, self-promotion, service showcase pages, ability one-pagers, case page generation, sales conversations, pricing, proposals, follow-up messages, deal tracking, avoiding free-demo scope creep, or converting past client chats into reusable negotiation experience.
 ---
 
 # Solo Sales War Room
@@ -30,11 +30,12 @@ Only after those three sections, add short supporting analysis if useful.
 3. Produce a short message the user can send now.
 4. If the user needs new leads, cold outreach, lead research, or a first-contact message, load `references/acquisition-playbook.md`.
 5. If the user asks for marketing cases, self-promotion examples, pitch framing, public proof, or contest positioning, load `references/marketing-case-library.md`.
-6. If pricing or scope is involved, load `references/pricing-playbooks.md`.
-7. If the user provides a client chat or asks how to reply, load `references/follow-up-templates.md`.
-8. Always include a compact deal-memory update; load `references/case-record-template.md` when the user shares past negotiations, asks to remember, summarizes a deal, or continues an old client thread.
-9. If the user is preparing a BotLearn/OPC SkillHunt post, demo, or contest note, load `references/contest-note-template.md`.
-10. If the customer stage is ambiguous, load `references/deal-diagnosis.md`.
+6. If the user wants to promote themselves or their company, turn past work into a service showcase, create an ability one-pager, or generate a case page, load `references/service-showcase-generator.md`.
+7. If pricing or scope is involved, load `references/pricing-playbooks.md`.
+8. If the user provides a client chat or asks how to reply, load `references/follow-up-templates.md`.
+9. Always include a compact deal-memory update; load `references/case-record-template.md` when the user shares past negotiations, asks to remember, summarizes a deal, or continues an old client thread.
+10. If the user is preparing a BotLearn/OPC SkillHunt post, demo, or contest note, load `references/contest-note-template.md`.
+11. If the customer stage is ambiguous, load `references/deal-diagnosis.md`.
 
 ## Output Contract
 
@@ -61,6 +62,18 @@ For acquisition help, output:
 三步跟进节奏
 线索评分表
 可复用获客经验
+需要补充的信息
+```
+
+For self-promotion or company-promotion help, output:
+
+```text
+定位一句话
+目标客户
+服务展示模块
+能力一页草稿
+案例页结构
+可直接发布的简介
 需要补充的信息
 ```
 
@@ -136,6 +149,14 @@ Say "这个打法借鉴了 PitchSense / Content Creator Connector 这类公开�
 | package proof for a proposal | PresentMe, Awwwards / Crazy Creative |
 | follow up and collect feedback | Resonance AI, Heydesk |
 | create a contest or pitch story | Red Bull Basement / AgriConnect |
+
+When the user needs a marketing story, choose one recognizable structure:
+
+| Framework | Use when |
+|---|---|
+| AIDA | the user needs a landing page, skill page, or public post |
+| PAS | the user needs a sharp pain-first sales message |
+| BAB | the user needs a before/after transformation story |
 
 ## Contest Mode
 

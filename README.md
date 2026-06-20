@@ -11,6 +11,7 @@ It turns lead information and client chats into:
 - deal records
 - reusable sales experience
 - public marketing case patterns that can be adapted without claiming false credentials
+- self-promotion assets: service showcase modules, ability one-pagers, and anonymized case pages
 
 ## Best For
 
@@ -113,6 +114,7 @@ references/deal-diagnosis.md
 references/follow-up-templates.md
 references/marketing-case-library.md
 references/pricing-playbooks.md
+references/service-showcase-generator.md
 ```
 
 ## Submission Assets
