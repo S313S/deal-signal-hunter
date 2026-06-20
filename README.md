@@ -58,10 +58,39 @@
 
 ## 推荐使用方式
 
-在 BotLearn 中使用这个 Prompt：
+这个 Skill 不只适用于 BotLearn。只要你的 Agent 支持读取 GitHub 仓库、Markdown 指令文件，或可以粘贴系统提示词，就可以使用。
+
+如果你的 Agent 已经安装 / 导入了这个 Skill，直接使用：
 
 ```text
 Use $deal-signal-hunter to turn my lead or client chat into a concise sales action sheet and reusable deal memory.
+
+客户/线索类型：
+客户最新聊天记录或公开线索：
+我已经做了什么：
+我最纠结的问题：
+```
+
+如果你的 Agent 还没有安装这个 Skill，可以复制下面这段提示词，让它临时读取 GitHub 仓库后再执行：
+
+```text
+请使用这个 GitHub 仓库里的 Skill 帮我处理售前问题：
+
+https://github.com/S313S/deal-signal-hunter
+
+请先读取仓库根目录的 SKILL.md，并按其中的规则工作。
+如果需要参考资料，请读取同仓库 references/ 目录下的相关文件。
+
+我的需求是：把下面的客户线索或客户聊天记录，整理成一份可执行的售前行动单。
+
+请按这些栏目输出：
+1. 结论
+2. 下一步动作
+3. 可直接发送的话术
+4. 报价 / 边界建议
+5. 成交台账记录
+6. 可复用经验
+7. 下次触发条件
 
 客户/线索类型：
 客户最新聊天记录或公开线索：
@@ -175,3 +204,32 @@ Subpath: 留空
 ```
 
 仓库根目录已经包含 `SKILL.md`，导入时不需要填写子路径。
+
+## 其他 Agent 接入方式
+
+这个仓库是纯 Skill 包，不需要安装 npm、Python 或其他运行时依赖。只要你的 Agent 平台支持加载 Markdown Skill / system prompt / instruction bundle，就可以按下面方式接入：
+
+```text
+Skill name: deal-signal-hunter
+入口文件: SKILL.md
+参考资料目录: references/
+默认调用: Use $deal-signal-hunter ...
+```
+
+接入时需要保证：
+
+- `SKILL.md` 位于 Skill 根目录。
+- `references/` 和 `SKILL.md` 保持同级目录。
+- Agent 能读取 `references/*.md`，因为 `SKILL.md` 会按场景加载这些参考资料。
+- 如果平台支持 YAML 元数据，可以参考 `agents/openai.yaml` 里的展示名、简介和默认 Prompt。
+
+最小可用配置示例：
+
+```yaml
+name: deal-signal-hunter
+entrypoint: SKILL.md
+references: references/
+description: 识别客户需求、包装服务方案、生成报价话术和跟单复盘
+```
+
+注意：这个仓库不会自动让所有 Agent“自注册”。外部 Agent 仍然需要在自己的平台里配置入口文件或导入这个 GitHub 仓库。配置完成后，它不需要额外代码即可使用。
