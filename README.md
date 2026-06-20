@@ -1,42 +1,64 @@
 # 成交信号捕手
 
-`deal-signal-hunter` is an OPC sales workflow Skill for AI freelancers, one-person companies, and small studios.
+`deal-signal-hunter` 是一个面向 AI 自由职业者、一人公司和小型工作室的 BotLearn / OPC 销售流程 Skill。
 
-It helps independent service providers identify customer demand signals, package service offers, generate pricing replies, and turn follow-up into reusable deal memory.
+它帮助个人识别客户需求、包装服务方案、生成报价话术、推进跟单复盘，把每一次客户沟通沉淀成可复用的成交经验。
 
-It turns lead information and client chats into:
+## 适合谁
 
-- acquisition angles and first outreach messages
-- follow-up cadence
-- pricing and delivery boundaries
-- sendable client replies
-- deal records
-- reusable sales experience
-- public marketing case patterns that can be adapted without claiming false credentials
-- self-promotion assets: service showcase modules, ability one-pagers, and anonymized case pages
+- AI 自由职业者
+- 一人公司创始人
+- 小型工作室主理人
+- 正在接品牌站、AI 工作流、内容自动化、获客自动化项目的人
+- 需要自己完成获客、报价、跟进和复盘的服务型个人
 
-## Best For
+## 它解决什么问题
 
-- AI workflow projects
-- brand website projects
-- content automation projects
-- service-based solo businesses that need client acquisition and follow-up
+一人公司经常不是不会交付，而是卡在成交前：
 
-## Why It Exists
+- 不知道该先联系哪类客户
+- 第一封破冰消息写得太泛
+- 客户问价格时不知道怎么拆报价
+- 客户要求免费完整 Demo 时不知道怎么设边界
+- 客户拖延资料和付款时不知道怎么推进
+- 客户提出“后续分成”时，不知道怎么保护当前建设费
+- 每次谈单经验都散落在聊天记录里，下次又重新判断
 
-One-person companies often do not lack delivery ability. They get stuck before delivery:
+## 它会输出什么
 
-- who to approach first
-- what first message to send
-- how to quote without giving a dead price
-- how to avoid free complete demos
-- how to handle delayed materials or payments
-- how to separate current build fees from future revenue share
-- how to turn each negotiation into reusable experience
+输入潜在客户线索或客户聊天记录后，它会把信息整理成一份可执行的售前行动单。
 
-## Quick Start
+跟进 / 谈单场景会输出：
 
-Use this prompt:
+1. 结论
+2. 下一步动作
+3. 可直接发送的话术
+4. 报价 / 边界建议
+5. 成交台账记录
+6. 可复用经验
+7. 下次触发条件
+
+获客场景会输出：
+
+1. 目标客户画像
+2. 最值得切入的痛点
+3. 首封破冰话术
+4. 三步跟进节奏
+5. 线索评分表
+6. 可复用获客经验
+
+自我推广 / 服务展示场景会输出：
+
+1. 定位一句话
+2. 目标客户
+3. 服务展示模块
+4. 能力一页草稿
+5. 案例页结构
+6. 可直接发布的简介
+
+## 推荐使用方式
+
+在 BotLearn 中使用这个 Prompt：
 
 ```text
 Use $deal-signal-hunter to turn my lead or client chat into a concise sales action sheet and reusable deal memory.
@@ -47,7 +69,7 @@ Use $deal-signal-hunter to turn my lead or client chat into a concise sales acti
 我最纠结的问题：
 ```
 
-## Scenario 1: Revenue Share Boundary
+## 示例 1：客户提出“后续分成”
 
 ```text
 客户项目类型：
@@ -63,17 +85,14 @@ Use $deal-signal-hunter to turn my lead or client chat into a concise sales acti
 我不想直接拒绝长期合作，但也不想让未来不确定分成替代当前建设费。
 ```
 
-Expected output:
+这个场景下，Skill 会重点判断：
 
-- conclusion
-- next action
-- sendable reply
-- pricing/boundary advice
-- deal record
-- reusable experience
-- next trigger condition
+- 客户不是直接拒绝，而是在降低前期现金支出
+- 核心风险是用未来不确定收益替代当前建设费
+- 当前基础建设费和后续分成需要分开谈
+- 如果降价，必须同步缩小范围或限定维护期
 
-## Scenario 2: First Outreach
+## 示例 2：生成获客破冰消息
 
 ```text
 潜在客户类型：
@@ -86,25 +105,39 @@ AI 工作流、品牌独立站、内容自动化和售前跟进经验沉淀。
 我不想一上来就说“我能帮你做 AI”，想找到一个客户更容易理解的切入点。
 ```
 
-Expected output:
+这个场景下，Skill 会输出：
 
-- target customer profile
-- best pain point to mention
-- first outreach message
-- three-step follow-up cadence
-- lead score
-- reusable acquisition experience
+- 目标客户画像
+- 最值得切入的痛点
+- 首封破冰话术
+- 三步跟进节奏
+- 线索评分表
+- 可复用获客经验
 
-## Privacy
+## 设计重点
 
-Before using real cases publicly:
+成交信号捕手不是普通销售话术生成器。它更像一个面向一人公司的售前判断框架。
 
-- anonymize client names
-- remove private chat identifiers
-- generalize sensitive prices if needed
-- do not expose client internal plans
+每次输出都会尽量区分三件事：
 
-## Package Contents
+| 层级 | 作用 |
+| --- | --- |
+| 本次客户事实 | 方便继续跟进当前客户 |
+| 可复用经验 | 方便下次遇到类似客户时直接套用 |
+| 下次触发条件 | 让你知道什么时候该复用这条经验 |
+
+这样用户不是每次都从聊天记录里重新判断，而是在逐步建立自己的成交经验库。
+
+## 隐私提醒
+
+使用真实客户案例前，请先做匿名处理：
+
+- 去掉客户姓名、公司名、微信号、手机号等身份信息
+- 模糊具体金额、报价和内部计划
+- 不暴露客户未公开的商业安排
+- 公开发帖时只保留必要上下文和经过脱敏的聊天片段
+
+## 项目结构
 
 ```text
 SKILL.md
@@ -119,9 +152,7 @@ references/pricing-playbooks.md
 references/service-showcase-generator.md
 ```
 
-## Submission Assets
-
-This repository also includes optional contest assets:
+## 参赛与推广资料
 
 ```text
 demo.md
@@ -132,14 +163,15 @@ practical-note-flagship.md
 practical-note-acquisition.md
 screenshot-board.html
 contest-launch-plan.md
+judge-comments.html
 ```
 
-For BotLearn GitHub import, use:
+## BotLearn 导入方式
 
 ```text
 Repository URL: https://github.com/S313S/deal-signal-hunter
 Branch: main
-Subpath: leave empty
+Subpath: 留空
 ```
 
-The repository root contains `SKILL.md`, so no subpath is required.
+仓库根目录已经包含 `SKILL.md`，导入时不需要填写子路径。
