@@ -1,8 +1,8 @@
-# 一人公司售前作战室
+# 成交信号捕手
 
 ## 一句话介绍
 
-把潜在客户线索和客户聊天记录转成可执行的售前作战单：破冰话术、跟进节奏、报价边界、成交台账和可复用经验。
+帮助个人识别客户需求、包装服务方案、生成报价话术、推进跟单复盘的 AI Skill。
 
 ## 适合谁
 
@@ -71,7 +71,7 @@
 ## 推荐默认 Prompt
 
 ```text
-Use $solo-sales-war-room to turn my client chat into a concise sales action sheet and reusable deal memory.
+Use $deal-signal-hunter to turn my client chat into a concise sales action sheet and reusable deal memory.
 
 客户项目类型：
 客户最新聊天记录：
@@ -81,8 +81,8 @@ Use $solo-sales-war-room to turn my client chat into a concise sales action shee
 
 ## 可发实战笔记标题
 
-- 我用一人公司售前作战室，把客户“后续分成吧”拆成了可执行报价边界
-- 我用一人公司售前作战室，为一个小型品牌生成了首封获客破冰话术
+- 我用成交信号捕手，把客户“后续分成吧”拆成了可执行报价边界
+- 我用成交信号捕手，为一个小型品牌生成了首封获客破冰话术
 - 一个 AI 自由职业者如何避免客户把免费 Demo 变成长期试做
 - 客户拖着不补资料时，我用这个 Skill 生成了启动款和排期边界
 

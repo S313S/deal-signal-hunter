@@ -5,7 +5,7 @@ Use this to ask real users to install, run, and post practical notes.
 ## Short DM
 
 ```text
-我做了一个 OPC 参赛 Skill，叫「一人公司售前作战室」。
+我做了一个 OPC 参赛 Skill，叫「成交信号捕手」。
 
 它不是写销售鸡汤，而是把潜在客户线索和客户聊天记录转成：破冰话术、跟进节奏、报价边界、成交台账和可复用经验。
 
@@ -15,7 +15,7 @@ Use this to ask real users to install, run, and post practical notes.
 ## Longer DM
 
 ```text
-我现在在参加 BotLearn 的 OPC Agent Skills 比赛，做了一个 Skill：一人公司售前作战室。
+我现在在参加 BotLearn 的 OPC Agent Skills 比赛，做了一个 Skill：成交信号捕手。
 
 它面向 AI 自由职业者、一人公司和小型工作室，解决的不是泛泛销售问题，而是这些具体场景：
 - 不知道第一封获客消息怎么写
@@ -37,7 +37,7 @@ Use this to ask real users to install, run, and post practical notes.
 ## Prompt For Evaluators
 
 ```text
-Use $solo-sales-war-room to turn my lead or client chat into a concise sales action sheet and reusable deal memory.
+Use $deal-signal-hunter to turn my lead or client chat into a concise sales action sheet and reusable deal memory.
 
 客户/线索类型：
 客户最新聊天记录或公开线索：
@@ -61,7 +61,7 @@ AI 工作流、品牌独立站、内容自动化和售前跟进经验沉淀。
 ## Practical Note Template
 
 ```markdown
-# 我用「一人公司售前作战室」处理了一个真实售前场景
+# 我用「成交信号捕手」处理了一个真实售前场景
 
 ## 我的场景
 <写你是获客、报价、客户拖延、免费 Demo、分成合作，还是其他售前问题>

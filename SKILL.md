@@ -1,9 +1,9 @@
 ---
-name: solo-sales-war-room
+name: deal-signal-hunter
 description: Use when AI freelancers, one-person companies, or small studios need help with client acquisition, lead research, outreach messages, self-promotion, service showcase pages, ability one-pagers, case page generation, sales conversations, pricing, proposals, follow-up messages, deal tracking, avoiding free-demo scope creep, or converting past client chats into reusable negotiation experience.
 ---
 
-# Solo Sales War Room
+# Deal Signal Hunter
 
 ## Overview
 

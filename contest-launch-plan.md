@@ -1,13 +1,13 @@
 # Contest Launch Plan
 
-Goal: push `solo-sales-war-room` toward top-3 by optimizing for usefulness, install conversion, and practical-note volume.
+Goal: push `deal-signal-hunter` toward top-3 by optimizing for usefulness, install conversion, and practical-note volume.
 
 ## Positioning
 
 Use this one-liner everywhere:
 
 ```text
-一人公司售前作战室：把潜在客户线索和客户聊天记录转成破冰话术、跟进节奏、报价边界、成交台账和可复用经验。
+成交信号捕手：帮助个人识别客户需求、包装服务方案、生成报价话术、推进跟单复盘的 AI Skill。
 ```
 
 Avoid vague positioning:
@@ -73,7 +73,7 @@ Ask early users to post one of these note formats.
 ### Note 1: Revenue Share Boundary
 
 ```markdown
-# 我用一人公司售前作战室处理了一次“后续分成”谈判
+# 我用成交信号捕手处理了一次“后续分成”谈判
 
 客户希望当前费用优化，并提出后续按营业额分成。Skill 帮我判断这不是直接拒绝，而是客户想用未来不确定收益替代当前建设费。
 
@@ -83,7 +83,7 @@ Ask early users to post one of these note formats.
 ### Note 1B: First Outreach
 
 ```markdown
-# 我用一人公司售前作战室生成了一条获客破冰消息
+# 我用成交信号捕手生成了一条获客破冰消息
 
 我输入了一个小型品牌线索：有官网/社媒内容，但展示和跟进路径比较弱。Skill 没有给泛泛营销建议，而是输出目标客户画像、最值得切入的痛点、首封破冰话术和三步跟进节奏。
 
@@ -93,7 +93,7 @@ Ask early users to post one of these note formats.
 ### Note 2: Free Demo Boundary
 
 ```markdown
-# 我用一人公司售前作战室避免了一次免费完整 Demo
+# 我用成交信号捕手避免了一次免费完整 Demo
 
 客户想先看完整效果再决定是否合作。Skill 没有建议我继续证明能力，而是把下一步改成付费测试/限定样片，并明确测试交付和正式项目抵扣规则。
 
@@ -115,7 +115,7 @@ Ask early users to post one of these note formats.
 Use this when asking friends or peers to install and try it:
 
 ```text
-我做了一个参赛 Skill，叫「一人公司售前作战室」。
+我做了一个参赛 Skill，叫「成交信号捕手」。
 
 它不是写销售鸡汤，而是把潜在客户线索和客户聊天记录转成：破冰话术、跟进节奏、报价边界、成交台账和可复用经验。
 

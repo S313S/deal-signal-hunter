@@ -1,6 +1,8 @@
-# 一人公司售前作战室
+# 成交信号捕手
 
-`solo-sales-war-room` is an OPC sales workflow Skill for AI freelancers, one-person companies, and small studios.
+`deal-signal-hunter` is an OPC sales workflow Skill for AI freelancers, one-person companies, and small studios.
+
+It helps independent service providers identify customer demand signals, package service offers, generate pricing replies, and turn follow-up into reusable deal memory.
 
 It turns lead information and client chats into:
 
@@ -37,7 +39,7 @@ One-person companies often do not lack delivery ability. They get stuck before d
 Use this prompt:
 
 ```text
-Use $solo-sales-war-room to turn my lead or client chat into a concise sales action sheet and reusable deal memory.
+Use $deal-signal-hunter to turn my lead or client chat into a concise sales action sheet and reusable deal memory.
 
 客户/线索类型：
 客户最新聊天记录或公开线索：
@@ -135,7 +137,7 @@ contest-launch-plan.md
 For BotLearn GitHub import, use:
 
 ```text
-Repository URL: https://github.com/S313S/solo-sales-war-room
+Repository URL: https://github.com/S313S/deal-signal-hunter
 Branch: main
 Subpath: leave empty
 ```

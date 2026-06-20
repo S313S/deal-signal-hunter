@@ -121,7 +121,7 @@ Use this when the user gives a past project, client chat, folder, screenshot, or
 ### GitHub README Version
 
 ```text
-Solo Sales War Room is a sales workflow Skill for one-person companies. It helps AI freelancers and small studios turn messy leads, client chats, and project notes into outreach messages, pricing boundaries, follow-up plans, service one-pagers, case pages, and reusable deal memory.
+Deal Signal Hunter is a sales workflow Skill for one-person companies. It helps AI freelancers and small studios turn messy leads, client chats, and project notes into outreach messages, pricing boundaries, follow-up plans, service one-pagers, case pages, and reusable deal memory.
 ```
 
 ### Client Proposal Version

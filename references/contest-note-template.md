@@ -15,7 +15,7 @@ Before writing public notes:
 ## Practical Note Structure
 
 ```markdown
-# 我用「一人公司售前作战室」处理了一次真实客户跟进
+# 我用「成交信号捕手」处理了一次真实客户跟进
 
 ## 背景
 我是一个 <AI 自由职业者/一人公司/工作室>，最近遇到的问题是：<一句话痛点>。
